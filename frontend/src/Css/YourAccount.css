@@ -1,0 +1,137 @@
+.home-container {
+    display: flex;
+}
+
+.HomeNavbar {
+    flex-shrink: 0;
+}
+
+.your-account {
+    flex-grow: 1;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.account-container {
+    /* background: white; */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+/* backdrop-filter: blur(10px); */
+}
+
+.account-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-field {
+    margin-bottom: 15px;
+}
+
+.account-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.account-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background: none;
+    /* color: #adacac; */
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+/* backdrop-filter: blur(10px); */
+
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.delete-btn:hover {
+    background-color: #c62828;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    /* border: 2px red solid; */
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 400px;
+}
+@media (max-width: 916px) {
+    .modal-content {
+        margin-left: 130px;
+
+    }
+   
+}
+.modal-content p{
+    color: #adacac;
+    margin: 20px 0px;
+    
+}
+
+.buttonForDeleteAccount{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.confirm-button,
+.cancel-button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 300px;
+    
+}
+
+.confirm-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.cancel-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}

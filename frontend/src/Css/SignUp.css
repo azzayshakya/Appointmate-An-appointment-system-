@@ -1,0 +1,97 @@
+.SignupPage{
+  /* display: flex; */
+}
+.sign_up_form_main_container {
+  padding: 40px; 
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  /* border: 2px red solid; */
+}
+
+
+.login_form {
+
+  text-align: center;
+  background-color: #f0f2f5;
+  padding-top: 10px;
+
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  /* border: 2px red solid; */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+
+}
+.login_form h2{
+  margin-bottom: 20px;
+  font-weight: 500;
+
+}
+
+.input_group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+
+
+.input_text {
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  
+}
+.input_text {
+  font-weight: 500;
+}
+
+.button_group {
+  display: flex;
+  justify-content: center;
+}
+
+.signupbutton {
+  background-color: rgb(142, 211, 238);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.signupbutton a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.signupbutton:hover {
+  background: none;
+  color:rgb(142, 211, 238) ;
+
+
+  
+}
+.signupbutton a:hover{
+  color:rgb(142, 211, 238) ;
+
+
+}
+.InstituteNames{
+  border: 2px red solid;
+}
+.input_group_ins_name option{
+  border: 2px blue solid;
+}
+
+.SignUp_error {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}

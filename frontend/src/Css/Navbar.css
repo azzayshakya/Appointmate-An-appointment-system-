@@ -1,0 +1,165 @@
+/* Main Navbar styles */
+.navbar-container {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    /* border: 2px red solid; */
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.navbar-list li {
+    /* display: flex;
+    align-items: center; */
+    margin: 20px 0;
+}
+
+.navbar-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    /* display: flex;
+    align-items: center; */
+    flex-grow: 1; 
+}
+
+.navIcons {
+    margin-right: 10px;
+    font-size: 20px;
+    flex-shrink: 0; 
+}
+
+
+.navbar-list li span{
+    /* border: 2px red solid; */
+    margin-top: 3px;
+    /* margin-right: 10px; */
+        
+}
+.navIcons{
+    /* border: 2px red solid; */
+    /* margin-right: 20px; */
+    font-size: 20px;
+    
+}
+.navbar-toggle {
+    /* border: 2px red solid; */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1100;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.toggle_navbar_one {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    display: none;
+}
+
+.toggle_navbar_one button {
+    /* border: 2px red solid; */
+
+    background: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -10px;
+}
+
+.toggle_navbar_one.shifted {
+    left: 200px;
+}
+
+.toggle_navbar_one.shifted-right {
+    left: 250px;
+}
+
+/* Expanded Navbar for Small Screens */
+.toggle_navbar_two {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 767px) {
+    .toggle_navbar_one {
+        display: none;
+    }
+
+    .toggle_navbar_two {
+        display: none;
+    }
+
+    .navbar-container_main {
+        display: block;
+    }
+
+    .content {
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-container_main {
+        display: none;
+    }
+
+    .toggle_navbar_one {
+        display: flex; /* Only show when screen is less than 767px */
+    }
+
+    .content {
+        margin-left: 50px; /* Push content when toggle_navbar_one is visible */
+    }
+
+    .toggle_navbar_two {
+        left: 0; /* Ensure toggle_navbar_two appears to the right of toggle_navbar_one */
+    }
+
+    /* When toggle_navbar_two is open, push content further to the right */
+    .toggle_navbar_one.shifted ~ .content {
+        margin-left: 300px;
+    }
+
+    /* Adjust content margin when navbar_one shifts to the right of navbar_two */
+    .toggle_navbar_one.shifted-right ~ .content {
+        margin-left: 300px;
+    }
+}
+
+/* Content Styling */
+.content {
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
