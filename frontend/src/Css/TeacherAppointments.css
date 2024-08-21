@@ -9,7 +9,7 @@
   flex-shrink: 0;
   position: relative;
   z-index: 1;
-  transition: width 0.3s ease-in-out; /* Smooth transition for navbar width */
+  transition: width 0.3s ease-in-out; 
 }
 
 .TeacherAppointmentPage {
@@ -97,10 +97,10 @@ button:hover {
 
 @media (max-width: 480px) {
   .HomeNavbar {
-      width: 50px; /* Adjust navbar width for very small screens */
+      width: 50px; 
   }
   
   .TeacherAppointmentPage {
-      margin-left: 0; /* Remove margin to eliminate the gap */
+      margin-left: 0;
   }
 }

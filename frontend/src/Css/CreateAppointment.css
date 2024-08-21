@@ -143,17 +143,6 @@
     background-color: #dc3545;
     color: #fff;
 }
-/* #subjectFilter {
-    padding: 8px 12px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    color: #333;
-    outline: none;
-    cursor: pointer;
-    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-} */
 
 
 #subjectFilter:hover {

@@ -99,7 +99,6 @@
     left: 250px;
 }
 
-/* Expanded Navbar for Small Screens */
 .toggle_navbar_two {
     position: fixed;
     top: 0;
@@ -136,29 +135,28 @@
     }
 
     .toggle_navbar_one {
-        display: flex; /* Only show when screen is less than 767px */
+        display: flex; 
     }
 
     .content {
-        margin-left: 50px; /* Push content when toggle_navbar_one is visible */
+        margin-left: 50px; 
     }
 
     .toggle_navbar_two {
-        left: 0; /* Ensure toggle_navbar_two appears to the right of toggle_navbar_one */
+        left: 0;
     }
 
-    /* When toggle_navbar_two is open, push content further to the right */
+   
     .toggle_navbar_one.shifted ~ .content {
         margin-left: 300px;
     }
 
-    /* Adjust content margin when navbar_one shifts to the right of navbar_two */
+    
     .toggle_navbar_one.shifted-right ~ .content {
         margin-left: 300px;
     }
 }
 
-/* Content Styling */
 .content {
     padding: 20px;
     transition: margin-left 0.3s ease;

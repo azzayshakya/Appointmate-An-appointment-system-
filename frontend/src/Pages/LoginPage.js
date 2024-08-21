@@ -11,7 +11,7 @@ const Login = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
-    // Fetch the list of institutes from the backend
+ 
     const fetchInstitutes = async () => {
       try {
         const response = await fetch("http://localhost:7000/api/institutes");
