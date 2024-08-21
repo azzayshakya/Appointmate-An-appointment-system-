@@ -137,19 +137,17 @@
     border-radius: 4px;
     /* background: rgba(255, 255, 255, 0.9); */
     color: white;
-    appearance: none; /* Hide the default arrow */
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
 }
 
-/* Hover effect for the select dropdown */
 .input_group select:hover {
     border-color: #888;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Focus effect for the select dropdown */
 .input_group select:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
@@ -163,23 +161,21 @@
     font-size: 16px;
 }
 
-/* Styling for the selected option */
+
 .input_group option:checked {
     background-color: #007bff;
     color: white;
 }
 
-/* Hover effect for options in the dropdown */
 .input_group option:hover {
     background-color: #f1f1f1;
     color: #000;
 }
 
 select::-ms-expand {
-    display: none; /* Hide the dropdown arrow in IE */
+    display: none; 
 }
 
-/* Add a pseudo-element for the dropdown arrow */
 .input_group select::after {
     content: "\25BC";
     font-size: 16px;

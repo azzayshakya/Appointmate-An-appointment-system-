@@ -17,7 +17,7 @@ app.use(express.json());
 
 
 app.get('/', (req, res) => {
-  res.send(`Azzay Your Foodiii app listening on port ${port}`);
+  res.send(`Azzay Your Apppointment app listening on port ${port}`);
 });
 app.use('/api/', require('./Routes/CreateUser'));
 app.use('/api/', require('./Routes/Institutes'));
