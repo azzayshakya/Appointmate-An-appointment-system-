@@ -9,8 +9,8 @@ const mongoDB = require('./db');
 mongoDB();
 
 app.use(cors({
-  origin: ["https://appointmate-an-appointment-system.vercel.app"],
-  methods:["POST","GET","PUT","DELETE"],
+  origin: ["http://localhost:3000", "https://appointmate-an-appointment-system.vercel.app"],
+  methods: ["POST", "GET", "PUT", "DELETE"],
   credentials: true, 
 }));
 
