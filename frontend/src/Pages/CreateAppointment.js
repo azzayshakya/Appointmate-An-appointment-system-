@@ -23,7 +23,7 @@ const CreateAppointment = () => {
         const fetchTeachers = async () => {
             try {
                 console.log("hitted")
-                const response = await fetch("http://localhost:7000/api/fetchTeachers");
+                const response = await fetch("https://appointmate-an-appointment-system.vercel.app/api/fetchTeachers");
                 const data = await response.json();
                 setTeachers(data);
                 setFilteredTeachers(data);
@@ -59,7 +59,7 @@ const CreateAppointment = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:7000/api/makeAppointment", {
+            const response = await fetch("https://appointmate-an-appointment-system.vercel.app/api/makeAppointment", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

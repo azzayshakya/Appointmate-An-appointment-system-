@@ -17,7 +17,7 @@ const YourAccount = () => {
 
         const fetchUserData = async () => {
             try {
-                const response = await fetch("http://localhost:7000/api/YourAccount", {
+                const response = await fetch("https://appointmate-an-appointment-system.vercel.app/api/YourAccount", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -46,7 +46,7 @@ const YourAccount = () => {
     const confirmDelete = async (confirm) => {
         if (confirm) {
             try {
-                const response = await fetch("http://localhost:7000/api/deleteAccount", {
+                const response = await fetch("https://appointmate-an-appointment-system.vercel.app/api/deleteAccount", {
                     method: "DELETE",
                     headers: {
                         "Content-Type": "application/json"

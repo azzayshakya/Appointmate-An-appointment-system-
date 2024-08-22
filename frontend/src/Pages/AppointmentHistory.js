@@ -16,7 +16,7 @@ const AppointmentHistory = () => {
         const fetchAppointments = async () => {
             console.log("Fetching appointments...");
             try {
-                const response = await fetch("http://localhost:7000/api/appointments", {
+                const response = await fetch("https://appointmate-an-appointment-system.vercel.app/api/appointments", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -37,7 +37,7 @@ const AppointmentHistory = () => {
 
     const handleDelete = async (appointmentId) => {
         try {
-            const response = await fetch(`http://localhost:7000/api/appointments/${appointmentId}`, {
+            const response = await fetch(`https://appointmate-an-appointment-system.vercel.app/api/appointments/${appointmentId}`, {
                 method: 'DELETE'
             });
             const data = await response.json();

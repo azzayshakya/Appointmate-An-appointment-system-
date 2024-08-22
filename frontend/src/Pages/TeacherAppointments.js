@@ -14,7 +14,7 @@ const TeacherAppointment = () => {
 
         const fetchAppointments = async () => {
             try {
-                const response = await fetch("http://localhost:7000/api/TeacherAppointments", {
+                const response = await fetch("https://appointmate-an-appointment-system.vercel.app/api/TeacherAppointments", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -36,7 +36,7 @@ const TeacherAppointment = () => {
 
     const handleConfirm = async (appointmentId) => {
         try {
-            const response = await fetch(`http://localhost:7000/api/confirmAppointment/${appointmentId}`, {
+            const response = await fetch(`https://appointmate-an-appointment-system.vercel.app/api/confirmAppointment/${appointmentId}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json"
