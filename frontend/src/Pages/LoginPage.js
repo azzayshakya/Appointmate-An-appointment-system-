@@ -14,7 +14,7 @@ const Login = () => {
  
     const fetchInstitutes = async () => {
       try {
-        const response = await fetch("http://localhost:7000/api/institutes");
+        const response = await fetch("http://appointmate-an-appointment-system.vercel.app/api/institutes");
         const data = await response.json();
         setInstitutes(data);
       } catch (error) {
@@ -38,7 +38,7 @@ const Login = () => {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:7000/api/login", {
+      const response = await fetch("https://appointmate-an-appointment-system.vercel.app/api/login", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
