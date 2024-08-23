@@ -73,12 +73,12 @@ const Login = () => {
   };
 
   return (
-    <div className="SignupPage">
-      <div className="SignUpPagenavbar">
+    <div className="LoginPage">
+      <div className="LoginPagenavbar">
         <Navbar />
       </div>
       <div className='loginpagemaincontainer'>
-        <div className="login_form">
+        <div className="login_form  loginIn_form_main_container">
           <h2>Login</h2>
           <div className="input_group">
             <i className="fa-solid fa-square-envelope"></i>
